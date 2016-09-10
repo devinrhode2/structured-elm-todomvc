@@ -1,4 +1,4 @@
-module Control.View.Controls exposing (controls, visibilitySwap)
+module Control.View.Controls exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -9,9 +9,7 @@ import Control.Msg exposing (..)
 import Task.Model as Task
 
 
-control : String -> List Task.Model -> Html Main.Msg
-
-
+controls : String -> List Task.Model -> Html Main.Msg
 controls visibility tasks =
     let
         tasksCompleted =
