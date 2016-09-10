@@ -1,6 +1,6 @@
-module TodoApp.TaskList.Model exposing (..)
+module TaskList.Model exposing (..)
 
-import TodoApp.Task.Model as Task
+import Task.Model as Task
 
 
 type alias Model =
