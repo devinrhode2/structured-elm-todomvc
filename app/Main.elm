@@ -1,9 +1,9 @@
-port module Todo exposing (..)
+port module Main exposing (..)
 
 import Html.App as App
-import TodoApp.Model exposing (Model, init, withSetStorage)
-import TodoApp.View.TodoApp exposing (view)
-import TodoApp.Update exposing (updateWithCmd)
+import Model exposing (Model, init, withSetStorage)
+import Templates.Application exposing (view)
+import Update exposing (updateWithCmd)
 
 
 main : Program (Maybe Model)

@@ -1,15 +1,17 @@
-module TodoApp.Control.View.Controls exposing (..)
+module Control.View.Controls exposing (controls, visibilitySwap)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (..)
-import TodoApp.Msg as Main exposing (..)
-import TodoApp.TaskList.Msg exposing (..)
-import TodoApp.Control.Msg exposing (..)
-import TodoApp.Task.Model as Task
+import Msg as Main exposing (..)
+import TaskList.Msg exposing (..)
+import Control.Msg exposing (..)
+import Task.Model as Task
 
 
-controls : String -> List Task.Model -> Html Main.Msg
+control : String -> List Task.Model -> Html Main.Msg
+
+
 controls visibility tasks =
     let
         tasksCompleted =
